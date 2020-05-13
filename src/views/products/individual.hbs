@@ -1,0 +1,47 @@
+<!-- Page Content -->
+<div class="fondo">
+<div class="container">
+<div class="card lindo">
+  <div class="card-body">
+  </body>
+  <!-- Portfolio Item Heading -->
+  <h1 class="text-center"> {{produ.Titulo}}</h1>
+    <h6 class="text-muted text-center">Categoria: {{produ.Categoria}}</h6>
+  
+ 
+  <!-- Portfolio Item Row -->
+  <div class="row">
+
+    <div class="col-md-12 text-center">
+      <img class="img-fluid" src="{{produ.image}}" alt="">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+      <h3 class="my-3">Descripcion:</h3>
+      <p>{{produ.DescripcionLarga}}</p>
+          
+    <h6 class="my-3">Detalles:</h6>
+      <ul>
+        <li>{{produ.Detalles}}</li>
+      </ul>
+      <h3 class="my-3">Precio: ${{produ.Precio}}</h3>
+      {{#if user}} 
+      <a href="/allproducts" class="btn btn-primary btn-sm btn-block mb-2">Volver</a>
+      <a href="/products/edit/{{produ._id}}" class="btn btn-primary btn-sm btn-block mb-2"><i class="fa fa-pencil">   </i> Editar</a>   
+                <form action="/delete/{{produ._id}}?_method=DELETE" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <button type="submit" class="btn btn-danger btn-block btn-sm"><i class="fa fa-trash-o">   </i>  Borrar</button>{{else}}
+      <a href="{{produ.LinkDePago}}" class="btn btn-primary btn-sm btn-block mb-2">Comprar</a>
+      <div><a href="/allproducts" class="btn btn-warning btn-sm btn-block mb-2">Volver</a></div>
+      
+
+</div>
+        {{/if}}
+      
+    </div>
+  </div></div>
+  </div>
+  <!-- /.row -->
+
+</div>

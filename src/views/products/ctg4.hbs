@@ -1,0 +1,38 @@
+<div class="row">
+    {{#each ctg4}}
+    <div class="col-md-3">
+        <div class="card animated fadeInDown">
+            <img class="card-img-top img-responsive rounded ImgPro logo p-2" src="{{image}}" alt="..." > 
+            <div class="card-body">
+                <h4 class="card-title d-flex justify-content-between aling-items-center">
+                    {{Titulo}} 
+                </h4>
+                    <p>{{DescripcionCorta}}</p>
+                    <h5>{{Categoria}}</h5>
+                    <h3>$ {{Precio}}</h3>
+                
+                 {{#if ../user}}
+                
+                <a href="/products/edit/{{_id}}" class="btn btn-primary btn-sm btn-block mb-2"><i class="fa fa-pencil">   </i> Editar</a>   
+                <form action="/delete/{{_id}}?_method=DELETE" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <button type="submit" class="btn btn-danger btn-block btn-sm"><i class="fa fa-trash-o">   </i>  Borrar</button>
+                <a href="/individual/{{_id}}" class="btn btn-success btn-sm btn-block mb-2">Ver Producto!</a>
+                {{else}}
+                <a href="/individual/{{_id}}" class="btn btn-success btn-sm btn-block mb-2">Ver Producto!</a>
+                {{/if}}
+                
+                
+                </form>
+                
+            </div>
+             <div class="card-footer">
+                    <small class="text-muted">{{created_at}}</small>
+                    </div>
+        </div>
+       
+    </div>
+    
+    {{/each}}
+</div>
+

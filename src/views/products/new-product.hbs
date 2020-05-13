@@ -1,0 +1,56 @@
+<div class="mt-3 mb-3">
+<div class="col-md-6 mx-auto">
+    <div class="card text-center">
+  
+  <div class="card-header text-center">
+      <h3>Nuevo Producto</h3>
+  </div>
+  <div class="card-body" ></div>
+    <form action="/products/new-product" method="POST" enctype="multipart/form-data">
+  
+      <div class="form-grup p-2">
+
+<div class="custom-file">
+  <input type="file" class="custom-file-input" name="image" id="customFileLang" lang="es">
+  <label class="custom-file-label" for="customFileLang">Seleccionar Archivo (700x400 o 1:
+    .75:1)</label>
+</div>
+
+</div>
+      <div class="form-grup p-2">    
+        <input class="form-control" name="Titulo" type="text" placeholder="Titulo"></input>
+      </div>
+    <div class="form-grup p-2">  
+        <textarea class="form-control" name="DescripcionCorta" type="text" placeholder="Descripcion Corta "></textarea>
+        </div>
+        <div class="form-grup p-2">  
+        <textarea class="form-control" name="DescripcionLarga" type="text" placeholder="Descripcion Larga "></textarea>
+        </div>
+        <div class="form-grup p-2">  
+        <textarea class="form-control" name="Detalles" type="text" placeholder="Detalles ej:incluye "></textarea>
+        </div>
+        <div class="form-grup p-2">  
+        <textarea class="form-control" name="LinkDePago" type="text" placeholder="Link de Pago "></textarea>
+        </div>
+    <div class="form-grup p-2">  
+        <select class="custom-select" name="Categoria" type="text" id="inputGroupSelect01">
+    <option selected>Categoria</option>
+    <option value="Cat1">1</option>
+    <option value="Cat3">2</option>
+    <option value="Cat3">3</option>
+    <option value="Cat4">4</option>
+   <option value="Cat5">5</option>
+
+  </select>
+        </div>
+    <div class="form-grup p-2">  
+        <input class="form-control" name="Precio" type="text" placeholder="Precio sin signo peso"></input>
+        </div>
+    <div class="form-grup p-2">               
+            <button class="btn btn-success btn-block">Agregar</button>
+        </div>
+   
+    </div>
+  </div>
+
+</div>

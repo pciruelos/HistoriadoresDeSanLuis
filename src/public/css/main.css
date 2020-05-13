@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html {
+ height: 100%;
+  scroll-behavior: smooth;
+ 
+}
+
+
+body {
+  
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+background-repeat: no-repeat;
+background-size: cover; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+
+.offset::before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+
+}
+
+
+#photo1
+{
+  background-image: url("/img/2.jpg")!important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+#photo2 {
+  background-image: url("/img/3.jpg")!important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.5)!important;
+}
+.navbar-brand img {
+  height: 2rem;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+color: black;
+padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: black;
+}
+
+.home-inner {
+  background-image: url("/img/1.jpg")!important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.caption h1 {
+font-size: 3.8rem;
+font-weight: 700;
+letter-spacing: 0.3rem;
+text-shadow: 0.1rem 0.1rem 0.8rem black;
+padding-bottom: 1rem;
+}
+
+.caption h3 {
+  font-size: 2rem;
+  
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem; }
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+}
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.narrow h1{
+  font-size: 2.4rem;
+
+}
+
+.btn-success {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1.2rem;
+}
+
+hr.divider {
+  max-width: 10rem;
+  border-width: 0.2rem;
+  border-color:black;
+  margin: 0 auto 2rem;
+}
+
+footer {
+  background-color: #40474e;
+}
+
+#contact a {
+color: black;
+margin: 1rem;
+}
+
+#contact a:hover {
+  color: red;
+  
+  }
+  
+
+.fondo {
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+background-repeat: no-repeat;
+background-size: cover; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.lindo{
+  margin-top: 60px;
+  
+}
+@media (max-width: 767px)
+{
+  .caption h1 {
+  font-size: 2.3rem;
+  
+  letter-spacing: 0.15rem;
+  
+  padding-bottom: 0.5rem;
+  }
+  
+  .caption h3 {
+    font-size: 1.2rem;
+    
+  
+    padding-bottom: 1.2rem; }
+  
+  .btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    
+   
+  }
+
+
+
+}
