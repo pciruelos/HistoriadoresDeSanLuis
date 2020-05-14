@@ -7,17 +7,29 @@
 <div class="collapse navbar-collapse" id="navbarResponsive">
   <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="http://localhost:4000/#home">Inicio</a>
+        <a class="nav-link" href="http://historiadoresdesanluis.com/#home">Inicio</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="http://localhost:4000/#about">Acerca</a>
+        <a class="nav-link" href="http://historiadoresdesanluis.com/#about">Acerca</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="http://localhost:4000/#articulos">Articulos</a>
+        <a class="nav-link" href="http://historiadoresdesanluis.com/#articulos">Articulos</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="http://localhost:4000/#contact">Contacto</a>
+      <li class="nav-item active">       {{!-- localhost:4000 --}}
+        <a class="nav-link" href="http://historiadoresdesanluis.com/#contact">Contacto</a>
       </li>
+      {{#if user}} 
+    <li class="nav-item active">
+            <a class="nav-link" href="/products/add" >Agregar Producto</a>
+        </li>
+    <li class="nav-item active">
+            <a href="/users/cerrar" class="nav-link">Cerrar Session</a>
+        </li>
+        
+    {{else}}
+        <li class="nav-item"><a class="nav-link">-</a>
+        </li>
+        {{/if}}
   </ul>
 </div>
 </nav>
